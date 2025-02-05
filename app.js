@@ -2,9 +2,20 @@
 let amigos = [];
 function agregarAmigo() {
     let amigoNombre = document.getElementById('amigo').value;
-    amigos.push(amigoNombre);
-    console.log(amigos);
+    
+    if(amigoNombre === ""){
+        alert ("Por favor, inserte un nombre.");
+
+    } else if (!isNaN (amigoNombre)){
+        alert ("No puedes insertar un número. Por favor, inserte un nombre.");
+        document.getElementById('amigo').value = ''; 
+    }
+     else {
+        amigos.push(amigoNombre);
+        console.log(amigos);
     document.getElementById('amigo').value = ''; 
+    }
+    
 }
 function sortearAmigo() {
 
