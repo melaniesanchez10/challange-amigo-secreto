@@ -2,7 +2,6 @@
 let amigos = [];
 function agregarAmigo() {
     let amigoNombre = document.getElementById('amigo').value;
-    
     if(amigoNombre === ""){
         alert ("Por favor, inserte un nombre.");
 
@@ -13,7 +12,17 @@ function agregarAmigo() {
      else {
         amigos.push(amigoNombre);
         console.log(amigos);
+        listaAmigo()
     document.getElementById('amigo').value = ''; 
+    }
+    
+}
+function listaAmigo(){
+    let listaAmigo = document.getElementById('listaAmigos');
+    listaAmigo.innerHTML=""; //Limpia la lista de la etiqueta <ul>
+    for(let i = 0; i<amigos.length; i++){ //Todos los arreglos comienzan en 0
+        listaAmigo.innerHTML+="<li>"+amigos[i]+"</li>";//Aqui se va a volver a agregar los li.
+
     }
     
 }
