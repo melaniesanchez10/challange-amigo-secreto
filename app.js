@@ -27,5 +27,21 @@ function listaAmigo(){
     
 }
 function sortearAmigo() {
+    //const amigos = ["Carlos", "Ana", "Luis", "Marta", "José", "Laura"];
 
+  // Validar que el array amigos no esté vacío
+  if (amigos.length === 0) {
+    document.getElementById("resultado").innerHTML = "No hay amigos disponibles para sortear.";
+    return;
+  }
+
+  // Generar un índice aleatorio entre 0 y el tamaño del array
+  let indiceAleatorio = Math.floor(Math.random() * amigos.length);
+
+  // Obtener el nombre del amigo seleccionado
+  let amigoSeleccionado = amigos[indiceAleatorio];
+
+  // Mostrar el resultado
+  document.getElementById("resultado").innerHTML = `El amigo sorteado es: ${amigoSeleccionado}`;
 }
+
