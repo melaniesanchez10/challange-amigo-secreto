@@ -1,4 +1,4 @@
-# Challange Amigo Secreto 👾 ![image](https://github.com/user-attachments/assets/2d722e56-c863-407d-953d-7b389f2fcb93)
+# Challange Amigo Secreto 👾 <img src="assets/amigo.png">
 
 Este proyecto esta creado para el Programa ONE, alianza entre Alura Latam y Oracle.
 El proposito de este proyecto es practicar la lógica de programación vista en los cursos anteriores.
